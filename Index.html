@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JS.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Rick and Morty API</title>
+    <link rel="stylesheet" href="Style.css">
+</head text-center>
+<body>
+    <div class="container text-center mb-4">
+    <h1>Rick and Morty</h1>
+    <label for="">Ingrese el ID a buscar</label>
+    <input type="number" id="input-character">
+    <button onclick="agregarDatosTabla()" class="btn-dark" id="btn-buscar">Buscar</button>
+    <button onclick="eliminarDatosTabla()" class="btn btn-danger" id="btn-eliminar">Eliminar Personajes</button>
+    </div>
+    <div class="container"> 
+    <table class="table table-striped table-hover table-bordered text-center">
+            <thead>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Species</th>
+            <th>Status</th>
+            <th>Image</th>
+            </thead>
+
+    <tbody id="table-body">
+        </tbody>
+    </table>
+    </div>  
+</body>
+
+</html>
